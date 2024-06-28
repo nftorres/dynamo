@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://nftorres.github.io/dynamo",
+  "homepage": "http://nftorres.github.io/dynamo",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
