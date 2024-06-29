@@ -9,7 +9,7 @@ export default function index() {
         <div className="bg-transparent w-80 h-full pl-10 border-r border-neutral-900 text-white">
             <div className="h-full w-full px-3 flex flex-col justify-between">
                 <div className="flex flex-row items-center justify-start px-3 py-6">
-                    <img src="/dynamo/dynamo-logo.svg" alt="Logo de Dynamo" />
+                    <img src="https://nftorres.github.io/dynamo/dynamo-logo.svg" alt="Logo de Dynamo" />
                 </div>
                 <nav className="flex flex flex-col pt-8 pb-6">
                     {NAVBAR_LINKS.map((item) => (
