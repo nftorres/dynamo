@@ -7,7 +7,7 @@ export default function Welcome() {
         <div className="w-full h-full relative">
             <div className="select-none absolute inset-y-0 right-0 w-3/4 h-full z-0">
                 <img
-                    src="/img/altar.png"
+                    src="https://nftorres.github.io/dynamo/img/altar.png"
                     alt="Altar de Dynamo"
                     draggable="false"
                     className="w-full h-full object-cover"
@@ -18,7 +18,7 @@ export default function Welcome() {
 
             <div className="select-none absolute inset-y-0 right-0 w-3/4 h-full flex items-center justify-center z-10">
                 <img
-                    src="/dynamo.svg"
+                    src="https://nftorres.github.io/dynamo/dynamo.svg"
                     alt="Icono de Dynamo"
                     draggable="false"
                     className="w-40 h-auto mb-10 animate-up-down"
