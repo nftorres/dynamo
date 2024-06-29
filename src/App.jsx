@@ -5,7 +5,7 @@ import Tutorial from "./pages/tutorial"
 
 function App() {
     return (
-        <Router>
+        <Router basename="/dynamo">
             <Routes>
                 <Route path="/" element={<Home />}>
                     <Route index element={<Game />} />
