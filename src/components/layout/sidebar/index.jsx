@@ -41,7 +41,7 @@ export default function index() {
                         </div>
                     </div>
                     <div>
-                        <p className="font-light text-sm opacity-60">v1.0.0</p>
+                        <p className="font-light text-sm opacity-60">v1.0.1</p>
                     </div>
                 </footer>
             </div>
