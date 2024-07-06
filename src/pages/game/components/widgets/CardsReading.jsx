@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import StacksList from '../shared/StacksList';
 import { useGameContext } from '../../providers/GameProvider';
+import StacksList from '../shared/StacksList';
 
-export default function CardsReading({ active = true }) {
-	const [cards, setCards] = useState(() => {
-		const gameContext = useGameContext();
-		return gameContext.cards;
-	});
+export default function CardsReading() {
+	const { cards } = useGameContext();
+	const [gameCards] = useState(() => [...cards]);
+
 	return (
 		<div className='py-8 rounded-lg bg-neutral-950'>
-			<StacksList stacks={cards} />
+			<StacksList stacks={gameCards} />
 		</div>
 	);
 }
