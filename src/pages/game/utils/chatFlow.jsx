@@ -25,7 +25,6 @@ export default {
                 action: ({ gameToggleContext }) => {
                     const { selectDeck } = gameToggleContext;
                     selectDeck("spanish_deck");
-                    console.log("Baraja lista...");
                 },
             },
             {
@@ -33,7 +32,6 @@ export default {
                 action: ({ gameToggleContext }) => {
                     const { selectDeck } = gameToggleContext;
                     selectDeck("poker_deck");
-                    console.log("Baraja lista...");
                 },
             },
             {
@@ -41,7 +39,6 @@ export default {
                 action: ({ gameToggleContext }) => {
                     const { selectDeck } = gameToggleContext;
                     selectDeck("tarot_deck");
-                    console.log("Baraja lista...");
                 },
             },
         ],
@@ -63,9 +60,7 @@ export default {
         options: [
             {
                 label: "Continuar",
-                action: () => {
-                    console.log("Cartas listas...");
-                },
+                action: () => {},
             },
         ],
     },
