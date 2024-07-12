@@ -10,7 +10,7 @@ import {
 } from '../../utils/helpers/gameHelpers';
 import { useGameToggleContext } from '../../providers/GameProvider';
 
-export default function CardsSelector({ active = true }) {
+export default function CardsSelector({ active }) {
 	const { saveCards } = useGameToggleContext();
 	const { cards: suits } = useGameDeck();
 
@@ -36,14 +36,22 @@ export default function CardsSelector({ active = true }) {
 			<div className='flex flex-row py-4 px-6 items-center justify-end space-x-2'>
 				<button
 					title='Añadir nuevas cartas'
-					className='p-2 rounded-lg opacity-60 hover:cursor-pointer hover:bg-neutral-900 hover:opacity-100'
+					className={`p-2 rounded-lg opacity-60 ${
+						active
+							? 'hover:cursor-pointer hover:bg-neutral-900 hover:opacity-100'
+							: 'hover:cursor-no-drop'
+					}`}
 					disabled={!active}
 					onClick={handleSelectCards}>
 					<CgCardSpades size={20} />
 				</button>
 				<button
 					title='Barajar cartas'
-					className='p-2 rounded-lg opacity-60 hover:cursor-pointer hover:bg-neutral-900 hover:opacity-100'
+					className={`p-2 rounded-lg opacity-60 ${
+						active
+							? 'hover:cursor-pointer hover:bg-neutral-900 hover:opacity-100'
+							: 'hover:cursor-no-drop'
+					}`}
 					disabled={!active}
 					onClick={handleShuffleCards}>
 					<TbCards size={20} />
